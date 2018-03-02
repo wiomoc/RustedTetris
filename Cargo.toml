@@ -1,0 +1,14 @@
+[package]
+name = "RustedTetris"
+version = "0.1.0"
+authors = ["wiomoc"]
+
+[dependencies]
+ termios="0.2.2"
+ rand = "0.3"
+
+
+[profile.release]
+ opt-level = 3
+ lto = true
+ panic = 'abort'
